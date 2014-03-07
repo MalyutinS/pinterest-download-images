@@ -148,20 +148,6 @@ namespace PinterestGet100
             try
             {
 
-                // This line must be called in UI thread to get correct scheduler
-                // var scheduler = System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext();
-
-                // this can be called anywhere
-                // var task = new System.Threading.Tasks.Task(LogToDatabase);
-
-                // also can be called anywhere. Task  will be scheduled for execution.
-                // And *IF I'm not mistaken* can be (or even will be executed synchronously)
-                // if this call is made from GUI thread. (to be checked) 
-                // task.Start(scheduler);
-
-                
-                
-
                 if (string.IsNullOrEmpty(tbxDir.Text))
                 {
                     MessageBox.Show("Please choose directory to save images");
